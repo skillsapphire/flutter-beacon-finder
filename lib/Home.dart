@@ -41,7 +41,7 @@ class _HomeState extends State<Home> {
       // list can be empty if no matching beacons were found in range
       setState(() {
         for(var item in result.beacons){
-          //beaconList.add("MacAddress: "+item.macAddress +"\n ProximityUUID: "+ item.proximityUUID);
+          beaconList.add("MacAddress: "+item.macAddress +"\n ProximityUUID: "+ item.proximityUUID);
         }
       });
     });
